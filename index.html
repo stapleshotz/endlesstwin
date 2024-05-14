@@ -8,6 +8,9 @@
     body {
         font-family: 'Calluna', serif, georgia, serif;
         font-weight: normal;
+   		font-size: 20px;
+    	line-height: 26px;
+    	margin-top: 20px;
         color: #777;
         margin: 0;
         padding: 0;
@@ -24,6 +27,7 @@
         color: #777;
         text-decoration: none;
         margin: 0 10px;
+        padding: 1em;
     }
     .logo {
         max-width: 700px;
@@ -47,6 +51,11 @@
     }
     .content {
     	flex-grow:1;
+        
+    }
+    .line {
+    	border-top: 1px solid #ddd;
+        margin: 20px o;
     }
     footer {
         background-color: #fff;
@@ -57,6 +66,10 @@
         bottom: 0;
         width: 100%;
     }
+    ::selection {
+    background: black;
+    color: white;
+}
 </style>
 </head>
 <body>
@@ -64,6 +77,7 @@
         <a href="https://www.example.com">Music</a>
         <a href="https://www.example.com">Connect</a>
     </header>
+    <div class="line"></div>
     <div class="content">
         <img src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Logo.png" alt="Endless Twin Logo" class="logo">
         <p class="description">Hey spotify for artists! contact@middlebornmusic.com is my label!</p>
