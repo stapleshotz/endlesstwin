@@ -11,64 +11,58 @@
         padding: 0;
     }
     header {
-        color: #888;
-        margin-top: 40px;
-        display: block;
-        width: 100%;
+        background-color: #333;
+        color: white;
         text-align: center;
+        padding: 10px 0;
     }
-    nav a {
-        color: #888;
+    header a {
+        color: white;
         text-decoration: none;
         margin: 0 10px;
     }
     .logo {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .description {
         text-align: center;
-    	margin-top: 40px;
-    	max-width: 100%;
-    	width: 100%; /* Add this line */
-    	display: block;
-    	margin-left: auto; /* Center the logo horizontally */
-   		margin-right: auto; /* Center the logo horizontally */
-    	height: auto;
+        margin: 20px 0;
     }
     .banner {
-        display: block;
-        margin: 20px auto;
-        max-width: 40%;
+        max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
     footer {
-        background-color: #fff;
-        color: #000;
+        background-color: #333;
+        color: white;
         text-align: center;
         padding: 10px 0;
+        position: absolute;
         bottom: 0;
         width: 100%;
     }
-
 </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="https://www.example.com/music" target="_blank">Music</a>
-            <a href="https://www.middlebornmusic.com/connect" target="_blank">Connect</a>
-        </nav>
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Logo.png" alt="Logo">
-        </div>
+        <a href="https://www.example.com">Music</a>
+        <a href="https://www.example.com">Connect</a>
     </header>
-    
-    <div>
-        <p style="text-align: center;">Hey spotify for artists! contact@middlebornmusic.com is my label!</p>
-        <img class="banner" src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Banner.jpg" alt="Banner">
+    <div class="content">
+        <img src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Logo.png" alt="Endless Twin Logo" class="logo">
+        <p class="description">Hey spotify for artists! contact@middlebornmusic.com is my label!</p>
+        <img src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Banner.jpg" alt="Endless Twin Banner" class="banner">
     </div>
     <footer>
-        <p>© Middleborn Music <span id="year"></span></p>
+        © Middleborn Music <span id="year"></span>
     </footer>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 </body>
 </html>
