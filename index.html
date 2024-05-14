@@ -40,12 +40,29 @@
         bottom: 0;
         width: 100%;
     }
+
+    /* Media Queries for responsiveness */
+    @media only screen and (max-width: 600px) {
+        .logo {
+            margin-top: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        nav a {
+            display: block;
+            margin: 5px 0;
+        }
+        .banner {
+            margin: 10px auto;
+        }
+    }
 </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="https://open.spotify.com/artist/5LkxOmrVlAgb4p0H58UqKD?si=Zs3sqnxqSdeuV53MfJCzow" target="_blank">Music</a>
+            <a href="https://www.example.com/music" target="_blank">Music</a>
             <a href="https://www.middlebornmusic.com/connect" target="_blank">Connect</a>
         </nav>
     </header>
@@ -53,9 +70,7 @@
         <img src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Logo.png" alt="Logo">
     </div>
     <div>
-        <p style="text-align: center;">Hey spotify for artists! contact@middlebornmusic.com is my label!
-
-</p>
+        <p style="text-align: center;">Your description goes here.</p>
         <img class="banner" src="https://raw.githubusercontent.com/stapleshotz/endlesstwin/main/EndlessTwin_Banner.jpg" alt="Banner">
     </div>
     <footer>
